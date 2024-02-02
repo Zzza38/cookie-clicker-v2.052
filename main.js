@@ -1158,9 +1158,7 @@ var Game={};
 			if (Game.mods[i] && Game.mods[i]['load']) Game.mods[i]['load'](Game.modSaveData[i]);
 		}
 	}
-    javascript: (function () {
-  Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
-})();
+
 	Game.deleteModData=function(id)
 	{
 		if (Game.modSaveData[id]) delete Game.modSaveData[id];
@@ -2062,7 +2060,7 @@ Game.Launch=function()
 		
 		Game.volume=75;//sound volume
 		Game.volumeMusic=50;//music volume
-		
+		Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
 		Game.elderWrath=0;
 		Game.elderWrathOld=0;
 		Game.elderWrathD=0;

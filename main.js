@@ -2060,7 +2060,7 @@ Game.Launch=function()
 		
 		Game.volume=75;//sound volume
 		Game.volumeMusic=50;//music volume
-		Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+		
 		Game.elderWrath=0;
 		Game.elderWrathOld=0;
 		Game.elderWrathD=0;

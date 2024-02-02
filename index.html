@@ -65,11 +65,7 @@ ad
 		<button onclick="autoclick()">Autoclick</button>
 		<script>
     function autoclick(x,y) {
-const element = document.getElementById("bigCookie");
-	    i = 0
-	    while (i < 100) {
-  element.click();
-  i++;
+var autoclicker = setInterval(function(){ try { Game.lastClick -= 1000; document.getElementById('bigCookie').click(); } catch (err) { console.error('Stopping auto clicker'); clearInterval(autoclicker); } }, 1);
 }
 
 	    

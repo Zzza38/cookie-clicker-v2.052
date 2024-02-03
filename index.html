@@ -51,28 +51,10 @@ ad
 		<div><b style="font-weight:bold;">Cookie Clicker</b>&trade; &copy; <a href="//orteil.dashnet.org" target="_blank" id="topbarOrteil">Orteil</a>, 2023 - <a href="//dashnet.org" target="_blank" id="topbarDashnet">DashNet</a></div>
 		<div><a href="https://twitter.com/orteil42" target="_blank" id="topbarTwitter">twitter</a></div>
 		<div><a href="https://orteil42.tumblr.com" target="_blank" id="topbarTumblr">tumblr</a></div>
-		<button onclick="openFullScreenMenu()"> Hacks</button>
-		<div id="menuFull">
-        <div id="hackMenu">
-            <h1>Full Screen Menu</h1>
-            <p>This is your full-screen menu content.</p>
             <button onclick="loadMod()">Load Cookie Monster</button>
             <button onclick="autoclick()">Autoclick</button>
-        </div>
-        <div id="closeButton" onclick="closeFullScreenMenu()">✖</div>
-    </div>
-</div>
 
 <script>
-
-    function openFullScreenMenu() {
-        document.getElementById('hackMenu').style.display = 'block';
-    }
-
-    function closeFullScreenMenu() {
-        document.getElementById('hackMenu').style.display = 'none';
-    }
-
     function loadMod() {
         var script = document.createElement("script");
         script.type = 'text/javascript';
